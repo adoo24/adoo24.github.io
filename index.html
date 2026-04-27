@@ -1,0 +1,1376 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>김준서 이력서</title>
+  <meta name="description" content="백엔드 엔지니어 김준서 이력서">
+  <link rel="preconnect" href="https://static.wanted.co.kr">
+  <link rel="stylesheet" href="https://static.wanted.co.kr/fonts/pretendard/pretendard/pretendardvariable-dynamic-subset.min.css">
+  <style>
+    :root {
+      --bg: #f8f8f8;
+      --paper: #fff;
+      --ink: #222;
+      --text: #333;
+      --muted: #8f98a3;
+      --line: #e8ebef;
+      --soft: #f3f5f8;
+      --blue: #2b7fff;
+      --blue-soft: #edf5ff;
+      --chip: #f5f7fa;
+      --accent: #111827;
+      --shadow: 0 18px 60px rgba(16, 24, 40, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(43, 127, 255, .08), transparent 34rem),
+        linear-gradient(180deg, #fbfcfd 0%, var(--bg) 34rem);
+      color: var(--text);
+      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.72;
+      letter-spacing: -.015em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--blue);
+    }
+
+    .shell {
+      width: min(100%, 1080px);
+      margin: 0 auto;
+      padding: 36px 28px 72px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+      color: #6b7280;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 800;
+    }
+
+    .resume {
+      display: grid;
+      grid-template-columns: 1fr 292px;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .paper {
+      background: var(--paper);
+      border: 1px solid rgba(232, 235, 239, .85);
+      border-radius: 26px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .main {
+      padding: 58px 64px 64px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 146px;
+      gap: 32px;
+      align-items: start;
+      padding-bottom: 54px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      color: var(--ink);
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.05;
+      letter-spacing: -.055em;
+      font-weight: 850;
+    }
+
+    .role {
+      margin-top: 14px;
+      color: #4b5563;
+      font-size: 18px;
+      font-weight: 750;
+    }
+
+    .intro {
+      max-width: 620px;
+      margin-top: 30px;
+      color: #2f343b;
+      font-size: 18px;
+      line-height: 1.75;
+      font-weight: 580;
+      word-break: keep-all;
+    }
+
+    .contact {
+      display: grid;
+      gap: 10px;
+      min-width: 190px;
+      margin-top: 24px;
+      color: #717b87;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 650;
+    }
+
+    .contact a,
+    .contact span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--soft);
+      color: #8993a1;
+      font-size: 12px;
+      font-weight: 850;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+
+    .dot-icon svg {
+      display: block;
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .profile-photo-card {
+      width: 146px;
+      margin: 2px 0 0;
+      padding: 7px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 14px 36px rgba(16, 24, 40, .08);
+    }
+
+    .profile-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border-radius: 18px;
+      object-fit: cover;
+      object-position: center 40%;
+      background: #f4f6f8;
+    }
+
+    .section {
+      padding-top: 54px;
+    }
+
+    .section + .section {
+      margin-top: 8px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 28px;
+      color: var(--ink);
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 850;
+      letter-spacing: -.04em;
+    }
+
+    .section-title small {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: -.01em;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 36px;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 26px;
+      position: relative;
+    }
+
+    .item + .item::before {
+      content: "";
+      position: absolute;
+      top: -18px;
+      left: 158px;
+      right: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .period {
+      color: #6f7a86;
+      font-size: 14px;
+      font-weight: 760;
+      line-height: 1.45;
+      white-space: pre-line;
+    }
+
+    .content {
+      min-width: 0;
+    }
+
+    .company-line {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 8px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      object-fit: contain;
+    }
+
+    h3 {
+      color: #20242a;
+      font-size: 19px;
+      line-height: 1.35;
+      font-weight: 820;
+      letter-spacing: -.035em;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+      color: #808a96;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .meta span:not(:last-child)::after {
+      content: "|";
+      margin-left: 8px;
+      color: #d2d7de;
+      font-weight: 500;
+    }
+
+    .project {
+      margin-top: 24px;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(180deg, #fff 0%, #fbfcfe 100%);
+    }
+
+    .project h4 {
+      margin: 0 0 12px;
+      color: #1f2937;
+      font-size: 17px;
+      line-height: 1.42;
+      font-weight: 820;
+      letter-spacing: -.03em;
+    }
+
+    .project-overview {
+      margin-top: 4px;
+      color: #4b5563;
+      font-weight: 700;
+      word-break: keep-all;
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 14px 0 0;
+    }
+
+    .stack-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 10px;
+      border: 1px solid #e6eaf0;
+      border-radius: 999px;
+      background: #f7f9fc;
+      color: #526071;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .trouble-panel {
+      margin-top: 18px;
+      padding: 16px;
+      border: 1px solid #e5ebf3;
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(43, 127, 255, .045), transparent 100%),
+        #fff;
+    }
+
+    .trouble-head {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .trouble-tab {
+      display: inline-flex;
+      align-items: center;
+      height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #111827;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: -.01em;
+    }
+
+    .trouble-title {
+      flex: 1 1 240px;
+      min-width: 0;
+      color: #1f2937;
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 900;
+      letter-spacing: -.025em;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+
+    .project .project-period {
+      display: inline-flex;
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 820;
+    }
+
+    .lead {
+      margin-bottom: 12px;
+      color: #4b5563;
+      font-weight: 700;
+      word-break: keep-all;
+    }
+
+    .paar {
+      display: grid;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .paar-row {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      min-height: 54px;
+      overflow: hidden;
+      border: 1px solid #eef1f5;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .paar-key {
+      display: grid;
+      place-items: center;
+      color: #111827;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.03em;
+    }
+
+    .paar-key.problem {
+      background: #ff4b45;
+    }
+
+    .paar-key.analyze {
+      background: #ffe12b;
+    }
+
+    .paar-key.action {
+      background: #1da1ff;
+    }
+
+    .paar-key.result {
+      background: #45df62;
+    }
+
+    .paar-body {
+      display: grid;
+      align-content: center;
+      gap: 3px;
+      padding: 10px 14px;
+      background: #fbfcfe;
+    }
+
+    .paar-body b {
+      color: #1f2937;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: -.02em;
+    }
+
+    .paar-body span {
+      color: #4b5563;
+      font-size: 13px;
+      line-height: 1.6;
+      font-weight: 650;
+      word-break: keep-all;
+    }
+
+    .reference-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      width: fit-content;
+      margin-top: 16px;
+      padding: 9px 12px;
+      border-radius: 12px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .reference-link:hover {
+      background: #dcecff;
+      color: #1769e8;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin: 7px 0;
+      padding-left: 2px;
+    }
+
+    li::marker {
+      color: #a6afba;
+    }
+
+    strong {
+      color: #20242a;
+      font-weight: 850;
+    }
+
+    .grid-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .education .item {
+      grid-template-columns: 132px 1fr;
+    }
+
+    .education-card {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .status {
+      margin-top: 4px;
+      color: #7f8894;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 13px;
+      border: 1px solid #e6eaf0;
+      border-radius: 999px;
+      background: var(--chip);
+      color: #334155;
+      font-size: 13px;
+      font-weight: 760;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link-card {
+      display: grid;
+      gap: 4px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .link-card b {
+      color: #26303b;
+      font-size: 14px;
+      font-weight: 820;
+    }
+
+    .link-card span {
+      color: #7a8490;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .side {
+      position: sticky;
+      top: 26px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .side-card {
+      padding: 24px;
+      border-radius: 24px;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 34px rgba(16, 24, 40, .06);
+    }
+
+    .side-card h2 {
+      margin-bottom: 16px;
+      color: #222;
+      font-size: 16px;
+      font-weight: 850;
+      letter-spacing: -.03em;
+    }
+
+    .summary-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .summary-list div {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+      color: #727c88;
+      font-size: 13px;
+      font-weight: 720;
+    }
+
+    .summary-list strong {
+      color: #1f2937;
+      text-align: right;
+    }
+
+    .nav {
+      display: grid;
+      gap: 7px;
+    }
+
+    .nav a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 38px;
+      padding: 0 12px;
+      border-radius: 12px;
+      color: #5b6571;
+      font-size: 13px;
+      font-weight: 760;
+    }
+
+    .nav a:hover {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .print-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 15px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #334155;
+      font-weight: 820;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      border-color: var(--blue);
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .language {
+      display: grid;
+      gap: 12px;
+    }
+
+    .language-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .language-row b {
+      color: #26303b;
+      font-weight: 820;
+    }
+
+    .language-row span {
+      color: #7a8490;
+      font-size: 13px;
+      font-weight: 720;
+    }
+
+    .etc-card {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .etc-mark {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: #111827;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+
+    .etc-card h3 {
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .etc-card p {
+      color: #5f6976;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.65;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 920px) {
+      .shell {
+        padding: 0 0 48px;
+      }
+
+      .topbar,
+      .side {
+        display: none;
+      }
+
+      .resume {
+        display: block;
+      }
+
+      .paper {
+        min-height: 100vh;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .main {
+        padding: 72px 36px 54px;
+      }
+
+      .hero {
+        grid-template-columns: minmax(0, 1fr) 128px;
+        gap: 20px;
+        padding-bottom: 52px;
+      }
+
+      .contact {
+        margin-top: 22px;
+      }
+
+      .profile-photo-card {
+        width: 128px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .item,
+      .education .item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .item + .item::before {
+        left: 0;
+      }
+
+      .grid-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .main {
+        padding: 56px 24px 48px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .hero {
+        grid-template-columns: minmax(0, 1fr) 104px;
+        gap: 16px;
+      }
+
+      .profile-photo-card {
+        width: 104px;
+        padding: 5px;
+        border-radius: 18px;
+      }
+
+      .profile-photo {
+        border-radius: 14px;
+      }
+
+      .section {
+        padding-top: 46px;
+      }
+
+      .project {
+        padding: 18px;
+      }
+
+      .grid-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      body {
+        background: #fff;
+        font-size: 12px;
+      }
+
+      .shell {
+        width: 100%;
+        padding: 0;
+      }
+
+      .topbar,
+      .side {
+        display: none;
+      }
+
+      .resume {
+        display: block;
+      }
+
+      .paper {
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      .main {
+        padding: 14mm 14mm;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .role {
+        margin-top: 3mm;
+        font-size: 13px;
+      }
+
+      .intro {
+        margin-top: 5mm;
+        font-size: 12px;
+        line-height: 1.55;
+      }
+
+      .contact {
+        gap: 2mm;
+        margin-top: 5mm;
+        font-size: 11px;
+      }
+
+      .dot-icon {
+        width: 6mm;
+        height: 6mm;
+      }
+
+      .profile-photo-card {
+        width: 32mm;
+        padding: 1.5mm;
+        border-radius: 5mm;
+        border-color: #eef1f5;
+        box-shadow: none;
+      }
+
+      .profile-photo {
+        border-radius: 4mm;
+      }
+
+      .hero {
+        grid-template-columns: minmax(0, 1fr) 32mm;
+        padding-bottom: 7mm;
+      }
+
+      .section {
+        padding-top: 6mm;
+      }
+
+      .section-title {
+        margin-bottom: 4.5mm;
+      }
+
+      .timeline {
+        gap: 7mm;
+      }
+
+      .item {
+        grid-template-columns: 28mm 1fr;
+        gap: 7mm;
+      }
+
+      .item + .item::before {
+        left: 35mm;
+      }
+
+      .project {
+        margin-top: 4mm;
+        padding: 4.4mm;
+        break-inside: auto;
+      }
+
+      .project h4 {
+        margin-bottom: 3mm;
+      }
+
+      .project-overview {
+        line-height: 1.45;
+      }
+
+      .project-stack {
+        gap: 1.5mm;
+        margin-top: 3mm;
+      }
+
+      .stack-tag {
+        min-height: 6mm;
+        padding: 1.2mm 2.5mm;
+        font-size: 10.5px;
+      }
+
+      .trouble-panel {
+        margin-top: 4mm;
+        padding: 3.5mm;
+        break-inside: auto;
+      }
+
+      .trouble-head {
+        margin-bottom: 3mm;
+        gap: 2mm;
+        display: block;
+      }
+
+      .trouble-tab {
+        height: 6mm;
+        padding: 0 2.5mm;
+        font-size: 10.5px;
+        margin-bottom: 1.5mm;
+      }
+
+      .trouble-title {
+        display: block;
+        flex-basis: auto;
+        font-size: 11px;
+        line-height: 1.3;
+      }
+
+      .paar-row {
+        grid-template-columns: 10mm 1fr;
+        min-height: 12mm;
+        break-inside: avoid;
+      }
+
+      .paar-body {
+        padding: 2.4mm 3.5mm;
+      }
+
+      .paar-body span {
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+
+      .reference-link {
+        min-height: 7mm;
+        margin-top: 3mm;
+        padding: 1.5mm 3mm;
+        font-size: 11px;
+      }
+
+      .education-card,
+      .language-row,
+      .etc-card {
+        padding: 3mm 3.5mm;
+      }
+
+      .status,
+      .etc-card p {
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .chips {
+        gap: 1.5mm;
+      }
+
+      .chip {
+        min-height: 6mm;
+        padding: 1.2mm 2.2mm;
+        font-size: 10.5px;
+      }
+
+      .language {
+        gap: 2.5mm;
+      }
+
+      .etc-card {
+        grid-template-columns: 11mm 1fr;
+        gap: 3mm;
+      }
+
+      .etc-mark {
+        width: 11mm;
+        height: 11mm;
+        border-radius: 3.5mm;
+        font-size: 10.5px;
+      }
+
+      .etc-card h3 {
+        margin-bottom: 1.5mm;
+        font-size: 12px;
+      }
+
+      .education-card,
+      .link-card,
+      .language-row,
+      .etc-card {
+        break-inside: avoid;
+      }
+
+      .print-page-break {
+        break-before: page;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <span>Wanted 스타일 기반 정적 이력서</span>
+      <span class="badge">Backend Engineer</span>
+    </div>
+
+    <div class="resume">
+      <main class="paper">
+        <article class="main">
+          <header class="hero" id="top">
+            <div>
+              <h1>김준서</h1>
+              <p class="role">백엔드 엔지니어</p>
+              <p class="intro">글로벌 13개국 환경에서 하루 1억 건 이상의 트래픽을 처리하며, 24/7 운영과 장애 대응을 통해 시스템 안정성을 확보해 온 백엔드 엔지니어입니다.</p>
+              <address class="contact">
+                <a href="tel:01029740880"><span class="dot-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.7 3.8 9.3 3l2 5-1.7 1.1c.9 1.8 2.4 3.3 4.2 4.2l1.1-1.7 5 2-.8 2.6c-.3 1-1.2 1.6-2.2 1.5C9.8 17.2 4.8 12.2 4.3 5.1c-.1-1 .5-1.9 1.5-2.2Z"/></svg></span>01029740880</a>
+                <a href="mailto:adoo244475@gmail.com"><span class="dot-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m5 8 7 5 7-5"/></svg></span>adoo244475@gmail.com</a>
+                <a href="https://velog.io/@adoo24/posts"><span class="dot-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 16 16 8"/><path d="M10 8h6v6"/></svg></span>velog.io/@adoo24</a>
+              </address>
+            </div>
+            <figure class="profile-photo-card" aria-label="김준서 증명사진">
+              <img class="profile-photo" src="assets/profile.jpg" alt="김준서 증명사진">
+            </figure>
+          </header>
+
+          <section class="section" id="experience">
+            <h2 class="section-title">경력 <small>2년 10개월</small></h2>
+            <div class="timeline">
+              <section class="item">
+                <div class="period">2023.10 - 재직 중</div>
+                <div class="content">
+                  <div class="company-line">
+                    <img class="logo" src="https://static.wanted.co.kr/images/wdes/0_5.9cf0a6dd.jpg" alt="">
+                    <div>
+                      <h3>현대오토에버</h3>
+                      <div class="meta"><span>정규직</span><span>백엔드 개발자</span><span>2년 7개월</span></div>
+                    </div>
+                  </div>
+
+                  <article class="project">
+                    <span class="project-period">2025.03 - 현재</span>
+                    <h4>AIOps 기반 장애 원인 자동 분석 Agent 시스템 구축</h4>
+                    <p class="project-overview">장애 발생 시 로그, 메트릭, 코드, 이슈 정보를 자동 탐색해 원인 분석 결과를 Slack으로 보고한 뒤 GitLab 이슈로 연결하는 24/7 장애 대응 LLM Agent 기반 AIOps 시스템을 구축했습니다.</p>
+                    <div class="project-stack" aria-label="프로젝트 기술 스택">
+                      <span class="stack-tag">LLM Agent</span>
+                      <span class="stack-tag">LangChain</span>
+                      <span class="stack-tag">Loki</span>
+                      <span class="stack-tag">Mimir</span>
+                      <span class="stack-tag">GitLab API</span>
+                      <span class="stack-tag">Slack</span>
+                    </div>
+                    <div class="trouble-panel print-page-break">
+                      <div class="trouble-head">
+                        <span class="trouble-tab">Problem Solving</span>
+                        <span class="trouble-title">해결한 문제</span>
+                      </div>
+                      <div class="paar" aria-label="PAAR 구조 경력 기술">
+                        <div class="paar-row">
+                          <div class="paar-key problem">P</div>
+                          <div class="paar-body">
+                            <b>Problem</b>
+                            <span>분산된 로그·메트릭·코드로 평균 30분 이상 소요되는 장애 원인 분석 구조, 운영자 경험 의존도 높음</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key analyze">A</div>
+                          <div class="paar-body">
+                            <b>Analyze</b>
+                            <span>장애 대응 지연의 핵심 병목을 “데이터 분산 + 수동 탐색 구조”로 정의, 24/7 자동 RCA 및 Slack 확인 루프 필요성 도출</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key action">A</div>
+                          <div class="paar-body">
+                            <b>Action</b>
+                            <span>24/7 장애 대응 Agent 구조 설계, Loki·Mimir·GitLab·Slack 등 7개 시스템 연동, Slack 보고 및 Context Offloading/Summarization 적용</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key result">R</div>
+                          <div class="paar-body">
+                            <b>Result</b>
+                            <span>장애 원인 분석 시간 30분 → 2~3분 단축 (약 93% 개선), Slack 기반 확인 루프와 GitLab 이슈 자동 생성으로 장애 대응 프로세스 표준화, 현대자동차 측 3억 규모 프로젝트 수주</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="reference-link" href="https://velog.io/@adoo24/AIOps-Agent-%EC%8B%A4%EC%A0%84-%EA%B5%AC%EC%B6%95%EA%B8%B0-RCA-%EC%8B%9C%EA%B0%84%EC%9D%84-93-%EB%8B%A8%EC%B6%95%ED%95%9C-%EB%B0%A9%EB%B2%95">상세 프로젝트 글 보기 →</a>
+                    </div>
+                    <div class="trouble-panel">
+                      <div class="trouble-head">
+                        <span class="trouble-tab">Troubleshoot</span>
+                        <span class="trouble-title">langchain(deepagents) read_file truncation 버그 기여 시도</span>
+                      </div>
+                      <div class="paar" aria-label="deepagents 트러블슈팅 PAAR">
+                        <div class="paar-row">
+                          <div class="paar-key problem">P</div>
+                          <div class="paar-body">
+                            <b>Problem</b>
+                            <span>대용량 Loki 로그 재탐색 시 `read_file` 직후 `input is too long` 반복 발생, Tool Result Eviction·Summarization 동작에도 overflow 지속</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key analyze">A</div>
+                          <div class="paar-body">
+                            <b>Analyze</b>
+                            <span>LangSmith 트레이스와 deepagents 코드 분석을 통해 line 수만 제한하는 `read_file` 구조, huge one-line ToolMessage의 keep zone 잔존 원인 식별</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key action">A</div>
+                          <div class="paar-body">
+                            <b>Action</b>
+                            <span>누적 문자 수 기준 truncation 헬퍼 설계, 조기 종료 및 안내 메시지 반환 로직 구현, 테스트 6건 추가와 PR 제출</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key result">R</div>
+                          <div class="paar-body">
+                            <b>Result</b>
+                            <span>동일 문제 영역의 upstream 수정 방향 검증, deepagents 내부 구조 이해 심화, 대용량 Tool 결과 처리 설계 역량 확보</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="reference-link" href="https://velog.io/@adoo24/langchaindeepagents-readfile-truncation-%EB%B2%84%EA%B7%B8-%EA%B8%B0%EC%97%AC-%EC%8B%9C%EB%8F%84">상세 트러블슈팅 글 보기 →</a>
+                    </div>
+                  </article>
+
+                  <article class="project">
+                    <span class="project-period">2024.03 - 현재</span>
+                    <h4>Global Traffic Information Provider Project</h4>
+                    <p class="project-overview">글로벌 13개국 차량에 교통, 사고, EV 충전소 등 실시간 위치 기반 정보를 제공하는 백엔드 서버를 개발·운영했습니다. 도메인 모델 공통 모듈화로 국가와 CP 추가 시 구조 변경을 최소화했습니다.</p>
+                    <div class="project-stack" aria-label="프로젝트 기술 스택">
+                      <span class="stack-tag">Spring WebFlux</span>
+                      <span class="stack-tag">MongoDB</span>
+                      <span class="stack-tag">Redis</span>
+                      <span class="stack-tag">Fluentd</span>
+                      <span class="stack-tag">Kubernetes</span>
+                      <span class="stack-tag">ArgoCD</span>
+                      <span class="stack-tag">Grafana</span>
+                    </div>
+                    <div class="trouble-panel">
+                      <div class="trouble-head">
+                        <span class="trouble-tab">Troubleshoot</span>
+                        <span class="trouble-title">응답 데이터 중복 제거 파이프라인 구축 경험</span>
+                      </div>
+                      <div class="paar" aria-label="Deduplication 트러블슈팅 PAAR">
+                        <div class="paar-row">
+                          <div class="paar-key problem">P</div>
+                          <div class="paar-body">
+                            <b>Problem</b>
+                            <span>운영 지역 확대와 트래픽 증가에 따른 VoC 증빙용 응답 데이터 저장량 선형 증가, 스토리지 스케일업 비용 부담</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key analyze">A</div>
+                          <div class="paar-body">
+                            <b>Analyze</b>
+                            <span>H3 셀과 5분 time bucket 기반 카디널리티 분석, 하루 트래픽 기준 중복 응답 비율 약 88% 확인</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key action">A</div>
+                          <div class="paar-body">
+                            <b>Action</b>
+                            <span>Fluentd 사이드카 기반 응답 해싱 파이프라인 구축, Redis SETNX 적용으로 중복 판별 원자성 확보 및 Race Condition 제거</span>
+                          </div>
+                        </div>
+                        <div class="paar-row">
+                          <div class="paar-key result">R</div>
+                          <div class="paar-body">
+                            <b>Result</b>
+                            <span>응답 데이터 저장량 99% 이상 감소, 평균 응답속도 100ms → 120ms 수준 내 관리, 운영 비용과 저장 효율 개선</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="reference-link" href="https://velog.io/@adoo24/응답-로그-중복-제거-플로우-구축기">상세 트러블슈팅 글 보기 →</a>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="item">
+                <div class="period">2023.07 - 2023.10</div>
+                <div class="content">
+                  <div class="company-line">
+                    <img class="logo" src="https://static.wanted.co.kr/images/wdes/0_5.11d3876d.png" alt="">
+                    <div>
+                      <h3>코드잇(codeit)</h3>
+                      <div class="meta"><span>프리랜서</span><span>외주 백엔드 개발자</span><span>4개월</span></div>
+                    </div>
+                  </div>
+
+                  <article class="project">
+                    <span class="project-period">2023.07 - 2023.10</span>
+                    <h4>코드잇 부트캠프 프로젝트</h4>
+                    <p class="lead">부트캠프 수강생들이 진행하는 실전 프로젝트에서 백엔드 파트를 외주로 담당했습니다.</p>
+                    <div class="project-stack" aria-label="프로젝트 기술 스택">
+                      <span class="stack-tag">Spring Boot</span>
+                      <span class="stack-tag">JPA</span>
+                      <span class="stack-tag">AWS EC2</span>
+                      <span class="stack-tag">GitHub Actions</span>
+                      <span class="stack-tag">Redis</span>
+                      <span class="stack-tag">Swagger</span>
+                    </div>
+                    <ul>
+                      <li>요구사항 정제부터 API 설계와 배포까지 구현했습니다.</li>
+                      <li>Swagger 기반 API 문서화와 팀원 대상 기술 가이드를 작성해 협업 속도를 높였습니다.</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="section education" id="education">
+            <h2 class="section-title">학력 및 교육</h2>
+            <div class="timeline">
+              <section class="item">
+                <div class="period">2023.06 - 2023.09</div>
+                <div class="education-card">
+                  <h3>삼성 청년 소프트웨어 아카데미 SSAFY</h3>
+                  <p class="status">교육활동 · 중퇴</p>
+                </div>
+              </section>
+              <section class="item">
+                <div class="period">2023.03 - 2023.05</div>
+                <div class="education-card">
+                  <h3>국민은행 IT 아카데미</h3>
+                  <p class="status">교육활동 · 졸업</p>
+                </div>
+              </section>
+              <section class="item">
+                <div class="period">2017.03 - 2023.02</div>
+                <div class="education-card">
+                  <h3>홍익대학교</h3>
+                  <p class="status">컴퓨터공학과 · 졸업</p>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="section" id="skills">
+            <h2 class="section-title">스킬</h2>
+            <div class="chips">
+              <span class="chip">Spring MVC</span>
+              <span class="chip">Java</span>
+              <span class="chip">Kotlin</span>
+              <span class="chip">JPA</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">InfluxDB</span>
+              <span class="chip">Redis</span>
+              <span class="chip">RabbitMQ</span>
+              <span class="chip">Kubernetes</span>
+              <span class="chip">Grafana</span>
+            </div>
+          </section>
+
+          <section class="section" id="language">
+            <h2 class="section-title">언어 / 기타</h2>
+            <div class="language">
+              <div class="language-row">
+                <b>영어</b>
+                <span>비즈니스 레벨 · TOEIC 930 · OPIC IH</span>
+              </div>
+              <div class="etc-card">
+                <div class="etc-mark">ETC</div>
+                <div>
+                  <h3>한미 부사관 포럼 통역 지원</h3>
+                  <p>카투사 복무 중 한미 부사관 포럼에서 통역을 지원하며 실무 영어 커뮤니케이션과 다국적 협업 경험을 쌓았습니다.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <aside class="side">
+        <section class="side-card">
+          <h2>요약</h2>
+          <div class="summary-list">
+            <div><span>직무</span><strong>Backend</strong></div>
+            <div><span>경력</span><strong>2년 10개월</strong></div>
+            <div><span>강점</span><strong>운영 안정성</strong></div>
+            <div><span>관심 영역</span><strong>AIOps</strong></div>
+          </div>
+        </section>
+
+        <nav class="side-card nav" aria-label="이력서 섹션">
+          <a href="#top">프로필 <span>01</span></a>
+          <a href="#experience">경력 <span>02</span></a>
+          <a href="#education">학력 <span>03</span></a>
+          <a href="#skills">스킬 <span>04</span></a>
+          <a href="#language">언어/기타 <span>05</span></a>
+        </nav>
+
+        <section class="side-card">
+          <h2>출력</h2>
+          <div class="print-actions">
+            <button class="button primary" type="button" onclick="window.print()">PDF 저장</button>
+            <a class="button" href="mailto:adoo244475@gmail.com">메일</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
