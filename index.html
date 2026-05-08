@@ -915,29 +915,31 @@
       }
 
       .section {
-        padding-top: 6mm;
+        padding-top: 5mm;
       }
 
       .section-title {
-        margin-bottom: 4.5mm;
+        margin-bottom: 3.5mm;
       }
 
       .timeline {
-        gap: 7mm;
+        gap: 5.5mm;
       }
 
       .item {
         grid-template-columns: 28mm 1fr;
-        gap: 7mm;
+        gap: 6mm;
+        padding-top: 2.5mm;
       }
 
       .item + .item::before {
+        top: 0;
         left: 35mm;
       }
 
       .project {
-        margin-top: 4mm;
-        padding: 4.4mm;
+        margin-top: 3.5mm;
+        padding: 4mm;
         break-inside: auto;
       }
 
@@ -950,8 +952,8 @@
       }
 
       .project-stack {
-        gap: 1.5mm;
-        margin-top: 3mm;
+        gap: 1.2mm;
+        margin-top: 2.5mm;
       }
 
       .stack-tag {
@@ -961,9 +963,10 @@
       }
 
       .trouble-panel {
-        margin-top: 4mm;
-        padding: 3.5mm;
-        break-inside: auto;
+        margin-top: 3.2mm;
+        padding: 3.2mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
       }
 
       .trouble-head {
@@ -993,12 +996,12 @@
       }
 
       .paar-body {
-        padding: 2.4mm 3.5mm;
+        padding: 2.2mm 3.2mm;
       }
 
       .paar-body span {
-        font-size: 11px;
-        line-height: 1.45;
+        font-size: 10.8px;
+        line-height: 1.4;
       }
 
 
@@ -1012,27 +1015,27 @@
       .education-card,
       .language-row,
       .etc-card {
-        padding: 3mm 3.5mm;
+        padding: 2.6mm 3.2mm;
       }
 
       .status,
       .etc-card p {
-        font-size: 11px;
-        line-height: 1.45;
+        font-size: 10.8px;
+        line-height: 1.4;
       }
 
       .chips {
-        gap: 1.5mm;
+        gap: 1.2mm;
       }
 
       .chip {
-        min-height: 6mm;
-        padding: 1.2mm 2.2mm;
+        min-height: 5.6mm;
+        padding: 1mm 2mm;
         font-size: 10.5px;
       }
 
       .language {
-        gap: 2.5mm;
+        gap: 2mm;
       }
 
       .etc-card {
@@ -1078,7 +1081,7 @@
             <div>
               <h1>김준서</h1>
               <p class="role">백엔드 엔지니어</p>
-              <p class="intro">글로벌 13개국 환경에서 하루 1억 건 이상의 트래픽을 처리하며, 24/7 운영과 장애 대응을 통해 시스템 안정성을 확보해 온 백엔드 엔지니어입니다.</p>
+              <p class="intro">글로벌 13개국 차량 서비스 환경에서 백엔드 서버를 개발·운영하고 있습니다.<br><br>하루 1억 건 이상의 트래픽을 처리하며 24/7 운영과 장애 대응을 통해 시스템 안정성을 만들어왔습니다.<br><br>최근에는 AIOps 기반 장애 원인 분석 Agent를 구축해 장애 분석 시간을 30분에서 2~3분 수준으로 단축했습니다.</p>
               <address class="contact">
                 <a href="tel:01029740880"><span class="dot-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.7 3.8 9.3 3l2 5-1.7 1.1c.9 1.8 2.4 3.3 4.2 4.2l1.1-1.7 5 2-.8 2.6c-.3 1-1.2 1.6-2.2 1.5C9.8 17.2 4.8 12.2 4.3 5.1c-.1-1 .5-1.9 1.5-2.2Z"/></svg></span>01029740880</a>
                 <a href="mailto:adoo244475@gmail.com"><span class="dot-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="m5 8 7 5 7-5"/></svg></span>adoo244475@gmail.com</a>
@@ -1156,7 +1159,7 @@
                     <div class="trouble-panel">
                       <div class="trouble-head">
                         <span class="trouble-tab">Troubleshoot</span>
-                        <span class="trouble-title">langchain(deepagents) read_file truncation 버그 기여 시도</span>
+                        <span class="trouble-title">langchain(deepagents) read_file truncation 버그 리포팅 및 PR 제안</span>
                       </div>
                       <div class="paar" aria-label="deepagents 트러블슈팅 PAAR">
                         <div class="paar-row">
