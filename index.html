@@ -920,18 +920,24 @@
       }
 
       .timeline {
-        gap: 5.5mm;
+        display: block;
       }
 
       .item {
-        grid-template-columns: 28mm 1fr;
-        gap: 6mm;
+        display: block;
         padding-top: 2.5mm;
       }
 
+      .item + .item {
+        margin-top: 5.5mm;
+      }
+
+      .period {
+        margin-bottom: 1.5mm;
+      }
+
       .item + .item::before {
-        top: 0;
-        left: 35mm;
+        display: none;
       }
 
       .project {
@@ -1192,7 +1198,7 @@
                       <span class="stack-tag">ArgoCD</span>
                       <span class="stack-tag">Grafana</span>
                     </div>
-                    <div class="trouble-panel">
+                    <div class="trouble-panel print-page-break">
                       <div class="trouble-head">
                         <span class="trouble-tab">Troubleshoot</span>
                         <span class="trouble-title">응답 데이터 중복 제거 파이프라인 구축 경험</span>
