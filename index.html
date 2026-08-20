@@ -968,14 +968,18 @@
       .trouble-panel {
         margin-top: 3.2mm;
         padding: 3.2mm;
-        break-inside: avoid;
-        page-break-inside: avoid;
       }
 
       .trouble-head {
         margin-bottom: 3mm;
         gap: 2mm;
         display: block;
+        break-after: avoid;
+        break-inside: avoid;
+      }
+
+      .paar-row:first-child {
+        break-before: avoid;
       }
 
       .trouble-tab {
@@ -1117,7 +1121,7 @@
                       <span class="stack-tag">GitLab API</span>
                       <span class="stack-tag">Slack</span>
                     </div>
-                    <div class="trouble-panel print-page-break">
+                    <div class="trouble-panel">
                       <div class="trouble-head">
                         <span class="trouble-tab">Problem Solving</span>
                         <span class="trouble-title">해결한 문제</span>
@@ -1198,7 +1202,7 @@
                       <span class="stack-tag">ArgoCD</span>
                       <span class="stack-tag">Grafana</span>
                     </div>
-                    <div class="trouble-panel print-page-break">
+                    <div class="trouble-panel">
                       <div class="trouble-head">
                         <span class="trouble-tab">Troubleshoot</span>
                         <span class="trouble-title">응답 데이터 중복 제거 파이프라인 구축 경험</span>
